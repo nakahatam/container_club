@@ -3,7 +3,7 @@ services:
   streamlit:
     build: ./streamlit
     volumes:
-- ./streamlit:/streamlit
+      - ./streamlit:/streamlit
     ports:
-- 8502:8501
+      - 8502:8501
     command: streamlit run ./streamlit/app.py
